@@ -1,0 +1,15 @@
+{
+  "name": "coolify-sample-app",
+  "version": "1.0.0",
+  "description": "Project 2 sample app — deploys on Coolify like you used to deploy on Vercel",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
