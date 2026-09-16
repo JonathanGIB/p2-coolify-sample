@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3000;
 
 app.get("/", (req, res) => {
   res.send(`<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Deployed via Coolify 🚀</title>
+ <h1>🚀 Deployed without Vercel by Jonathan!</h1>
 <style>body{font-family:system-ui,sans-serif;background:#0f172a;color:#fff;display:flex;align-items:center;justify-content:center;min-height:100vh;margin:0}
 .card{background:#fff;color:#0f172a;padding:32px;border-radius:16px;max-width:560px}.badge{background:#dcfce7;color:#166534;padding:4px 10px;border-radius:999px;font-size:12px}</style>
 </head><body><div class="card">
