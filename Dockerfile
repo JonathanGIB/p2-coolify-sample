@@ -8,5 +8,6 @@ COPY server.js ./
 ENV NODE_ENV=production
 ENV PORT=3000
 EXPOSE 3000
-HEALTHCHECK --interval=30s --timeout=3s CMD wget -qO- http://localhost:3000/api/health | grep -q ok || exit 1
+RUN apk add --no-cache wget
+HEALTHCHECK --interval=30s --timeout=3s --start-period=10s CMD wget -qO- http://127.0.0.1:3000/api/health | grep -q ok || exit 1
 CMD ["npm", "start"]
